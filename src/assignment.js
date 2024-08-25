@@ -102,21 +102,30 @@ export const ProductsSection = () => (
   </div>
 );
 
-export const TestimonialsSection = () => (
+export const TestimonialCarousel = () => (
   <div className="container mt-5" id="testimonials">
     <h2 className="text-center">TESTIMONIALS</h2>
     <div id="testimonialCarousel" className="carousel slide" data-bs-ride="carousel">
-      <div className="carousel-inner">
+      <div className="carousel-inner text-center">
         <div className="carousel-item active">
-          <img src="https://th.bing.com/th/id/OIP.G6m5nBOrOpnwjoloUK3zhAHaIB?pid=ImgDet&w=179&h=193&c=7&dpr=1.3" className="rounded-circle mb-4" alt="Testimonial Image" />
+          <img 
+            src="https://th.bing.com/th/id/OIP.G6m5nBOrOpnwjoloUK3zhAHaIB?pid=ImgDet&w=179&h=193&c=7&dpr=1.3"
+            className="rounded-circle mb-4" 
+            alt="Testimonial 1"
+          />
           <p>Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia...</p>
           <p><strong>PAULA WILSON</strong>, Media Analyst</p>
         </div>
         <div className="carousel-item">
-          <img src="path_to_testimonial_image2.png" className="rounded-circle mb-4" alt="Testimonial Image" />
+          <img 
+            src="path_to_testimonial_image2.png"
+            className="rounded-circle mb-4"
+            alt="Testimonial 2"
+          />
           <p>Fusce ornare urna sit amet ligula malesuada, eget tincidunt justo viverra...</p>
           <p><strong>JOHN DOE</strong>, Software Engineer</p>
         </div>
+        {/* Add more carousel items as needed */}
       </div>
       <button className="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -129,6 +138,7 @@ export const TestimonialsSection = () => (
       <ol className="carousel-indicators">
         <li data-bs-target="#testimonialCarousel" data-bs-slide-to="0" className="active"></li>
         <li data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></li>
+        {/* Add more indicators as needed */}
       </ol>
     </div>
   </div>
@@ -148,30 +158,24 @@ export const ContactUsSection = () => (
             <input type="text" className="form-control" id="name" placeholder="Name" />
           </div>
           <div className="mb-3">
-            <label htmlFor="email" className="form-label">Email address</label>
-            <input type="email" className="form-control" id="email" placeholder="name@example.com" />
+            <label htmlFor="email" className="form-label">Email</label>
+            <input type="email" className="form-control" id="email" placeholder="Email" />
           </div>
           <div className="mb-3">
             <label htmlFor="message" className="form-label">Message</label>
-            <textarea className="form-control" id="message" rows="3"></textarea>
+            <textarea className="form-control" id="message" rows="4" placeholder="Message"></textarea>
           </div>
-          <button type="submit" className="btn btn-primary">Submit</button>
+          <button type="submit" className="btn btn-primary">Send Message</button>
         </form>
       </div>
     </div>
   </div>
 );
 
-
-// const App = () => (
-//   <>
-//     <Navbar />
-//     <HeroSection />
-//     <FeaturesSection />
-//     <ProductsSection />
-//     <TestimonialsSection />
-//     <ContactUsSection />
-//   </>
-// );
-
-// export default App;
+export const Footer = () => (
+  <footer className="bg-light text-center py-3">
+    <div className="container">
+      <p className="mb-0">© {new Date().getFullYear()} Jillion Technologies. All rights reserved.</p>
+    </div>
+  </footer>
+);

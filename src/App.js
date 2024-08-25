@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { ContactUsSection, FeaturesSection, HeroSection, Navbar, ProductsSection, TestimonialsSection } from './assignment';
+import { ContactUsSection, FeaturesSection, Footer, HeroSection, Navbar, ProductsSection, TestimonialCarousel, TestimonialsSection } from './assignment';
 
 const App = () => (
   <>
@@ -8,8 +8,9 @@ const App = () => (
   <HeroSection/>
   <FeaturesSection/>
   <ProductsSection/>
-  <TestimonialsSection/>
+ <TestimonialCarousel/>
   <ContactUsSection/>
+  <Footer/>
   </>
 );
 
