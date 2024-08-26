@@ -173,9 +173,45 @@ export const ContactUsSection = () => (
 );
 
 export const Footer = () => (
-  <footer className="bg-light text-center py-3">
-    <div className="container">
-      <p className="mb-0">© {new Date().getFullYear()} Jillion Technologies. All rights reserved.</p>
+  <div className="bg-primary text-white mt-5">
+        <div className="container py-5">
+            <div className="row">
+                <div className="col-md-3">
+                    <h5>CONTACT US</h5>
+                    <p>Email</p>
+                    <p>contact@JILLIONTECHNOLOGIES.com</p>
+                    <p>Phone</p>
+                    <p>123456789</p>
+                    <p>Address</p>
+                    <p>C-260, Sector-63, Noida, UP-201301,</p>
+                </div>
+                <div className="col-md-3">
+                    <h5>COMPANY</h5>
+                    <ul className="list-unstyled">
+                        <li><a href="#" className="text-white">About Us</a></li>
+                        <li><a href="#" className="text-white">Services</a></li>
+                        <li><a href="#" className="text-white">Portfolio</a></li>
+                        <li><a href="#" className="text-white">Development Process</a></li>
+                        <li><a href="#" className="text-white">Career</a></li>
+                    </ul>
+                </div>
+                <div className="col-md-3">
+                    <h5>SERVICE</h5>
+                    <ul className="list-unstyled">
+                        <li><a href="#" className="text-white">Website Development</a></li>
+                        <li><a href="#" className="text-white">Mobile App Development</a></li>
+                        <li><a href="#" className="text-white">E-commerce Development</a></li>
+                        <li><a href="#" className="text-white">Customer Software Development</a></li>
+                    </ul>
+                </div>
+                <div className="col-md-3">
+                    <h5>SUPPORT</h5>
+                    <ul className="list-unstyled">
+                        <li><a href="#" className="text-white">Contact</a></li>
+                        <li><a href="#" className="text-white">Term & Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
-  </footer>
 );
